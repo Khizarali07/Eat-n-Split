@@ -1,3 +1,5 @@
+import "../index.css";
+
 function Friendlist({
   friends,
   onselectfriend,
@@ -6,7 +8,7 @@ function Friendlist({
 }) {
   return (
     <>
-      <div>
+      <div className="centering">
         <ul>
           {friends.map((element) => {
             return (

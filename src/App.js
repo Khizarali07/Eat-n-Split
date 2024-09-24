@@ -74,7 +74,7 @@ function App() {
             selectedfriend={selectedfriend}
           />
           {showaddfriend && <Addfriend onAddfriend={addfriends} />}
-          <button className="button my-3" onClick={handlefriendform}>
+          <button className="button my-3 last" onClick={handlefriendform}>
             {showaddfriend ? "Close" : "Add Friends"}
           </button>
         </div>
