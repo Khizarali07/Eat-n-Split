@@ -17,35 +17,29 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-body {
-  height: 100vh;
-  color: #495057;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (min-width: 850px) {
+  body {
+    background-color: white;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 850px) {
   .app {
-    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    position: relative;
+    justify-content: space-between;
+    align-items: centers;
   }
   .sidebar {
-    width: 100vw;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    width: 90vw;
   }
   .form-split-bill {
-    width: 100vw;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
+    width: 90vw;
   }
 }
 @media screen and (min-width: 850px) {
@@ -147,24 +141,25 @@ form {
   margin-bottom: 1.6rem;
   padding: 1.2rem;
 }
-.form-split-bill {
-  grid-template-columns: 1fr 12rem;
-  padding: 3.2rem 4rem;
-  position: relative;
-  top: 25;
+@media screen and (min-width: 850px) {
+  .form-split-bill {
+    grid-template-columns: 1fr 12rem;
+    padding: 3.2rem 4rem;
+    position: relative;
+    top: 25;
+  }
+  .inputposition {
+    position: absolute;
+    right: 0%;
+  }
+  .labelposition {
+    position: absolute;
+    left: 0%;
+  }
 }
 
 label {
   font-weight: 500;
-}
-
-.inputposition {
-  position: absolute;
-  right: 0%;
-}
-.labelposition {
-  position: absolute;
-  left: 0%;
 }
 
 input,

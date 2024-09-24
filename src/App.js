@@ -33,6 +33,7 @@ function App() {
 
   const handlefriendform = () => {
     setshowaddfriend(!showaddfriend);
+    setshowsplitbill(false);
   };
 
   const handlesplitform = (friend) => {
